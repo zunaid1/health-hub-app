@@ -36,6 +36,10 @@ const router = createBrowserRouter([
 			{
 				path: '/contact',
 				Component: Contact
+			},
+			{
+				path: '/doctor-details',
+				Component: DoctorDetails
 			}
 		]
 
