@@ -1,0 +1,162 @@
+[
+	{
+	  "id": 1,
+	  "Doctor_image": "https://i.ibb.co.com/ZzpQ4KtR/doctor-12.jpg",
+	  "Name": "Dr. Ayesha Siddiqua",
+	  "Education": "MBBS, FCPS (Medicine)",
+	  "Speciality": "Internal Medicine",
+	  "Experience": "10 years",
+	  "Registration_Number": "BMC-10001",
+	  "Available_Days": ["Sunday", "Tuesday", "Thursday"],
+	  "working_at": "Green Life Hospital, Dhaka",
+	  "Consultation_Fee": "800 BDT",
+	  "About_Doctor": "Dedicated physician specializing in diabetes, hypertension, and general internal medicine. Known for detailed attention and excellent patient communication."
+	},
+	{
+	  "id": 2,
+	  "Doctor_image": "https://i.ibb.co.com/PzJXGzGF/doctor-1.jpg",
+	  "Name": "Dr. Tanvir Alam",
+	  "Education": "MBBS, MS (Orthopedics)",
+	  "Speciality": "Orthopedic Surgeon",
+	  "Experience": "11 years",
+	  "Registration_Number": "BMC-10002",
+	  "Available_Days": ["Monday", "Wednesday", "Friday"],
+	  "working_at": "Ibn Sina Medical, Dhanmondi",
+	  "Consultation_Fee": "1000 BDT",
+	  "About_Doctor": "Orthopedic surgeon expert in trauma, sports injuries, and joint replacement. Offers modern treatment options with patient-centered care."
+  
+	},
+	{
+	  "id": 3,
+	  "Doctor_image": "https://i.ibb.co.com/whZ0pwWQ/doctor-2.jpg",
+	  "Name": "Dr. Nusrat Jahan",
+	  "Education": "MBBS, DGO",
+	  "Speciality": "Gynecologist",
+	  "Experience": "9 years",
+	  "Registration_Number": "BMC-10003",
+	  "Available_Days": ["Saturday", "Monday", "Wednesday"],
+	  "working_at": "Popular Diagnostic Center, Shantinagar",
+	  "Consultation_Fee": "700 BDT",
+	  "About_Doctor": "Experienced gynecologist focused on pregnancy care, infertility, menstrual disorders, and women's wellness with a friendly approach."
+	},
+	{
+	  "id": 4,
+	  "Doctor_image": "https://i.ibb.co.com/WvVhhghQ/doctor-3.jpg",
+	  "Name": "Dr. Fahim Hasan",
+	  "Education": "MBBS, MD (Cardiology)",
+	  "Speciality": "Cardiologist",
+	  "Experience": "13 years",
+	  "Registration_Number": "BMC-10004",
+	  "Available_Days": ["Sunday", "Tuesday", "Thursday"],
+	  "working_at": "National Heart Foundation, Mirpur",
+	  "Consultation_Fee": "1200 BDT",
+	  "About_Doctor": "Heart specialist treating coronary artery disease, hypertension, arrhythmia, and heart failure with advanced diagnostic and intervention skills."
+	},
+	{
+	  "id": 5,
+	  "Doctor_image": "https://i.ibb.co.com/r8WjPTr/doctor-4.jpg",
+	  "Name": "Dr. Momena Akter",
+	  "Education": "MBBS, FCPS (Dermatology)",
+	  "Speciality": "Dermatologist",
+	  "Experience": "7 years",
+	  "Registration_Number": "BMC-10005",
+	  "Available_Days": ["Monday", "Wednesday", "Saturday"],
+	  "working_at": "Square Hospitals, Dhaka",
+	  "Consultation_Fee": "900 BDT",
+	  "About_Doctor": "Skin specialist with expertise in acne, eczema, skin allergies, and cosmetic dermatology. Provides personalized skincare consultations and treatment."
+	},
+	{
+	  "id": 6,
+	  "Doctor_image": "https://i.ibb.co.com/wNmyxWQj/doctor-5.jpg",
+	  "Name": "Dr. Asif Hossain",
+	  "Education": "MBBS, MD (Neurology)",
+	  "Speciality": "Neurologist",
+	  "Experience": "12 years",
+	  "Registration_Number": "BMC-10006",
+	  "Available_Days": ["Sunday", "Tuesday", "Friday"],
+	  "working_at": "United Hospital, Gulshan",
+	  "Consultation_Fee": "1300 BDT",
+	  "About_Doctor": "Neurologist experienced in treating stroke, epilepsy, headache, Parkinson’s disease, and neurodegenerative disorders with compassionate care."
+	},
+	{
+	  "id": 7,
+	  "Doctor_image": "https://i.ibb.co.com/LDCTw30C/doctor-6.jpg",
+	  "Name": "Dr. Rehana Khatun",
+	  "Education": "MBBS, FCPS (ENT)",
+	  "Speciality": "ENT Specialist",
+	  "Experience": "10 years",
+	  "Registration_Number": "BMC-10007",
+	  "Available_Days": ["Tuesday", "Thursday", "Saturday"],
+	  "working_at": "Bangabandhu Sheikh Mujib Medical University (BSMMU)",
+	  "Consultation_Fee": "850 BDT",
+	  "About_Doctor": "ENT surgeon treating sinusitis, tonsillitis, ear infections, and hearing loss. Skilled in both pediatric and adult ENT care."
+	},
+	{
+	  "id": 8,
+	  "Doctor_image": "https://i.ibb.co.com/m1GZJ1B/doctor-7.jpg",
+	  "Name": "Dr. Mahbub Rahman",
+	  "Education": "MBBS, MS (Urology)",
+	  "Speciality": "Urologist",
+	  "Experience": "14 years",
+	  "Registration_Number": "BMC-10008",
+	  "Available_Days": ["Monday", "Wednesday", "Friday"],
+	  "working_at": "Delta Medical College Hospital",
+	  "Consultation_Fee": "1100 BDT",
+	  "About_Doctor": "Urologist with expertise in kidney stones, prostate issues, and urinary tract infections. Offers minimally invasive surgical solutions."
+	},
+	{
+	  "id": 9,
+	  "Doctor_image": "https://i.ibb.co.com/ynMX1FmH/doctor-8.jpg",
+	  "Name": "Dr. Sabina Yasmin",
+	  "Education": "MBBS, DCH",
+	  "Speciality": "Pediatrician",
+	  "Experience": "8 years",
+	  "Registration_Number": "BMC-10009",
+	  "Available_Days": ["Sunday", "Tuesday", "Thursday"],
+	  "working_at": "Shishu Hospital, Dhaka",
+	  "Consultation_Fee": "700 BDT",
+	  "About_Doctor": "Friendly child specialist for routine checkups, nutrition, vaccinations, and developmental issues from newborns to adolescents."
+	},
+	{
+	  "id": 10,
+	  "Doctor_image": "https://i.ibb.co.com/GQtQnsWj/doctor-9.jpg",
+	  "Name": "Dr. Kamrul Ahsan",
+	  "Education": "MBBS, MD (Gastroenterology)",
+	  "Speciality": "Gastroenterologist",
+	  "Experience": "15 years",
+	  "Registration_Number": "BMC-10010",
+	  "Available_Days": ["Monday", "Wednesday", "Friday"],
+	  "working_at": "Labaid Hospital, Dhanmondi",
+	  "Consultation_Fee": "1300 BDT",
+	  "About_Doctor": "Specialist in liver diseases, IBS, acid reflux, and endoscopy. Provides comprehensive digestive health care for all ages."
+  
+	},
+	{
+	  "id": 11,
+	  "Doctor_image": "https://i.ibb.co.com/4nkxXPbJ/doctor-10.jpg",
+	  "Name": "Dr. Laila Nargis",
+	  "Education": "MBBS, FCPS (Psychiatry)",
+	  "Speciality": "Psychiatrist",
+	  "Experience": "6 years",
+	  "Registration_Number": "BMC-10011",
+	  "Available_Days": ["Sunday", "Thursday"],
+	  "working_at": "National Institute of Mental Health",
+	  "Consultation_Fee": "900 BDT",
+	  "About_Doctor": "Treats depression, anxiety, bipolar disorder, and stress with personalized therapy and medication management in a safe space."
+  
+	},
+	{
+	  "id": 12,
+	  "Doctor_image": "https://i.ibb.co.com/DDxSzf08/doctor-11.jpg",
+	  "Name": "Dr. Zubair Hossain",
+	  "Education": "MBBS, MS (Neurosurgery)",
+	  "Speciality": "Neurosurgeon",
+	  "Experience": "17 years",
+	  "Registration_Number": "BMC-10012",
+	  "Available_Days": ["Tuesday", "Thursday", "Saturday"],
+	    "working_at": "Apollo Hospitals Dhaka",
+  "Consultation_Fee": "1500 BDT",
+  "About_Doctor": "Performs brain and spine surgery for trauma, tumors, and nerve disorders. Known for surgical precision and compassionate care."
+	}
+  ]
+  
