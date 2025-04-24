@@ -33,7 +33,11 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/blog',
-				Component: Blogs
+				Component: Blogs,
+				loader: () => fetch('../blogs.json'),
+				hydrateFallbackElement: <p>Loading, Please Wait....</p>,
+
+
 			},
 			{
 				path: '/contact',
