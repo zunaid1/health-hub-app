@@ -27,14 +27,18 @@ const Navbar = () => {
 						<li>
 							<NavLink
 								className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
-								to='/doctor-details'
+								to='/mybooked'
 							>
 								My-Bookings
 							</NavLink>
 						</li>
 					</ul>
 				</div>
-				<a className="btn btn-ghost text-xl"><BrandName></BrandName></a>
+				{/* <a className="btn btn-ghost text-xl"><BrandName></BrandName></a> */}
+
+				<NavLink className="btn btn-ghost text-xl" to='/'>
+				<BrandName></BrandName> 
+							</NavLink>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className='menu menu-horizontal px-1 hidden lg:flex'>
@@ -49,7 +53,7 @@ const Navbar = () => {
 					<li>
 						<NavLink
 							className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
-							to='/doctor-details'
+							to='/mybooked'
 						>
 							My-Bookings
 						</NavLink>

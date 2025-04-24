@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import DoctorDetails from '../pages/DoctorDetails';
 import Blogs from '../pages/Blogs';
 import Contact from '../pages/Contact';
+import BookedAppoint from '../pages/BookedAppoint';
 
 
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
 			{
 				path: '/doctor-details',
 				Component: DoctorDetails
+			},
+			{
+				path: '/mybooked',
+				Component: BookedAppoint
 			}
 		]
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
-import checkAvailability from '../utils';
+import checkAvailability, { addBooking } from '../utils';
+import Button from '../components/ui/Button';
 
 const DoctorDetails = () => {
 
@@ -14,6 +15,11 @@ const DoctorDetails = () => {
 	console.log(singleDoctor)
 	//const status = checkAvailability(Available_Days);
 	const doctorStatus = checkAvailability(Available_Days);
+
+	const handleBooking =()=> {
+		addBooking(singleDoctor)
+		//console.log("handle Booking button Clicked....");
+	}
 
 	return (
 		<div className="bg-gray-50 min-h-screen p-6">
@@ -99,9 +105,13 @@ const DoctorDetails = () => {
 					⚠️ Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.
 				</div>
 
-				<button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg">
-					Book Appointment Now
-				</button>
+
+
+				<Button onClick={handleBooking}
+					label='Book Appointment Now' />
+
+
+
 			</div>
 		</div>
 	);
