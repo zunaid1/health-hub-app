@@ -7,6 +7,7 @@ import DoctorDetails from '../pages/DoctorDetails';
 import Blogs from '../pages/Blogs';
 import Contact from '../pages/Contact';
 import BookedAppoint from '../pages/BookedAppoint';
+import NotFound from '../components/NotFound';
 
 
 
@@ -36,12 +37,10 @@ const router = createBrowserRouter([
 				Component: Blogs,
 				loader: () => fetch('../blogs.json'),
 				hydrateFallbackElement: <p>Loading, Please Wait....</p>,
-
-
 			},
 			{
 				path: '/contact',
-				Component: Contact
+				Component: NotFound
 			},
 			{
 				path: '/doctor-details',
@@ -50,6 +49,12 @@ const router = createBrowserRouter([
 			{
 				path: '/mybooked',
 				Component: BookedAppoint
+			},
+			{
+				path: '*',
+				Component: NotFound
+
+				// element: {<NotFound />}
 			}
 		]
 
