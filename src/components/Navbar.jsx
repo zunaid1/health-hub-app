@@ -112,7 +112,7 @@ const Navbar = () => {
 
 
 				<button className='btn btn-primary  text-white bg-[#176AE5] rounded-3xl ml-3'>
-					<NavLink to='/contact'>Emergency</NavLink>
+					<NavLink to='/'>Emergency</NavLink>
 				</button>
 			</div>
 		</div>

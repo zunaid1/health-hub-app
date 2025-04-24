@@ -46,7 +46,15 @@ const SuccessSection = () => {
 
 
 	return (
-		<div
+		<div>
+			{/* success-caption */}
+			<div className='text-center space-y-3'>
+				<h1 className='text-4xl font-bold'>We Provide Best Medical Service</h1>
+				<p className='text-gray-700 text-xl'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. </p>
+
+			</div>
+
+			<div
 			ref={ref}
 			className="grid grid-cols-1 md:grid-cols-4  gap-6 text-center py-12"
 		>
@@ -70,6 +78,7 @@ const SuccessSection = () => {
 					<p className="text-lg mt-2 text-gray-700">{stat.label}</p>
 				</div>
 			))}
+		</div>
 		</div>
 	);
 };

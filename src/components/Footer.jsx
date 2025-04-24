@@ -9,7 +9,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
 	return (
-		<div className='w-full bg-[#FFFFFF]  text-center p-4 flex flex-col justify-center items-center space-y-2'>
+		<div className='w-full bg-[#FFFFFF]  text-center p-4 flex flex-col justify-center items-center space-y-5'>
 			<BrandName></BrandName>
 			<div className="navbar-center  lg:flex">
 				<ul className='menu menu-horizontal px-1  lg:flex'>
@@ -50,7 +50,7 @@ const Footer = () => {
 
 				</ul>
 			</div>
-			<div className='flex space-x-4'>
+			<div className='flex space-x-10'>
 
 
 				<a
