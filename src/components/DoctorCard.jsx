@@ -13,7 +13,7 @@ function checkAvailability(availableDays) {
 
 
 const DoctorCard = ({ doctor }) => {
-	const { Doctor_image, Available_Days, Experience, Name, Education, Speciality, Registration_Number } = doctor;
+	const { Doctor_image, Available_Days, Experience, Name, Education, Speciality, Registration_Number, id } = doctor;
 
 	const status = checkAvailability(Available_Days);
 	//console.log(status);
@@ -66,6 +66,9 @@ const DoctorCard = ({ doctor }) => {
 				</Link>
 
 
+			</div>
+			<div className=' absolute -top-2 -right-2 bg-blue-200 w-12 h-12 rounded-full flex justify-center items-center text-2xl text-blue-800 font-bold'>
+				<h1>{id}</h1>
 			</div>
 		</div>
 	);

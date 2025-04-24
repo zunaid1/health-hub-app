@@ -4,7 +4,7 @@
 	  "Doctor_image": "https://i.ibb.co.com/ZzpQ4KtR/doctor-12.jpg",
 	  "Name": "Dr. Ayesha Siddiqua",
 	  "Education": "MBBS, FCPS (Medicine)",
-	  "Speciality": "Internal Medicine",
+	  "Speciality": "Gynecologist",
 	  "Experience": "10 years",
 	  "Registration_Number": "BMC-10001",
 	  "Available_Days": ["Sunday", "Tuesday", "Thursday"],
@@ -20,7 +20,7 @@
 	  "Speciality": "Orthopedic Surgeon",
 	  "Experience": "11 years",
 	  "Registration_Number": "BMC-10002",
-	  "Available_Days": ["Monday", "Wednesday", "Friday"],
+	  "Available_Days": ["Monday", "Wednesday", "Thursday", "Friday"],
 	  "working_at": "Ibn Sina Medical, Dhanmondi",
 	  "Consultation_Fee": "1000 BDT",
 	  "About_Doctor": "Orthopedic surgeon expert in trauma, sports injuries, and joint replacement. Offers modern treatment options with patient-centered care."
@@ -55,7 +55,7 @@
 	{
 	  "id": 5,
 	  "Doctor_image": "https://i.ibb.co.com/r8WjPTr/doctor-4.jpg",
-	  "Name": "Dr. Momena Akter",
+	  "Name": "Dr. Rashedul Islam",
 	  "Education": "MBBS, FCPS (Dermatology)",
 	  "Speciality": "Dermatologist",
 	  "Experience": "7 years",
@@ -81,7 +81,7 @@
 	{
 	  "id": 7,
 	  "Doctor_image": "https://i.ibb.co.com/LDCTw30C/doctor-6.jpg",
-	  "Name": "Dr. Rehana Khatun",
+	  "Name": "Dr. Raihan",
 	  "Education": "MBBS, FCPS (ENT)",
 	  "Speciality": "ENT Specialist",
 	  "Experience": "10 years",
@@ -107,7 +107,7 @@
 	{
 	  "id": 9,
 	  "Doctor_image": "https://i.ibb.co.com/ynMX1FmH/doctor-8.jpg",
-	  "Name": "Dr. Sabina Yasmin",
+	  "Name": "Dr. Zunaid",
 	  "Education": "MBBS, DCH",
 	  "Speciality": "Pediatrician",
 	  "Experience": "8 years",
@@ -134,7 +134,7 @@
 	{
 	  "id": 11,
 	  "Doctor_image": "https://i.ibb.co.com/4nkxXPbJ/doctor-10.jpg",
-	  "Name": "Dr. Laila Nargis",
+	  "Name": "Dr. Saiful Islam",
 	  "Education": "MBBS, FCPS (Psychiatry)",
 	  "Speciality": "Psychiatrist",
 	  "Experience": "6 years",

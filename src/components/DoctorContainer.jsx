@@ -1,7 +1,24 @@
 import DoctorCard from './DoctorCard'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const DoctorContainer = ({ doctors }) => {
+	const [displayDoctor, setDisplayDoctors] = useState([])
+	const [showAll, setShowAll] = useState(false)
+
+
+
+
+	useEffect(() => {
+		if (showAll) {
+			setDisplayDoctors(doctors)
+		}
+		else {
+			setDisplayDoctors(doctors.slice(0, 6))
+		}
+
+
+	}, [doctors, showAll])
+
 
 	console.log(doctors)
 	return (
@@ -16,18 +33,17 @@ const DoctorContainer = ({ doctors }) => {
 
 			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-8'>
 				{
-					doctors.map(doctor => < DoctorCard key={doctor.id}
+					displayDoctor.map(doctor => < DoctorCard key={doctor.id}
 						doctor={doctor}
 					/>)
 				}
 
-
+			 
 				 
-				 
-
-
-
-				<button className='px-15 col-span-full mx-auto text-center btn btn-primary text-white bg-[#176AE5]  rounded-3xl mt-2.5 md:mt-0 lg:mt-0'>Show All</button>
+				<button onClick={() => {
+					setShowAll(prv => !prv)
+					if(showAll) window.scrollTo(0, 400)
+				}} className='px-15 col-span-full mx-auto text-center btn btn-primary text-white bg-[#176AE5]  rounded-3xl mt-2.5 md:mt-0 lg:mt-0'>{showAll? 'Show Less' : 'Show All'}</button>
 
 			</div>
 		</div>

@@ -1,18 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from '../components/Hero';
 import DoctorContainer from '../components/DoctorContainer';
 import { useLoaderData } from 'react-router';
 
+
 const Home = () => {
 	//data
 	const data =useLoaderData()
-	//console.log(data)
+	const [doctor, setDoctor] = useState(data);
 
+
+
+	const handleSearch = (e, text) => {
+		e.preventDefault();
+
+		if(text === '') return setDoctor(data)
+		const searchedDoctor = data.filter(doctor =>
+			doctor?.Name?.toLowerCase().split(' ').includes(text.toLowerCase())
+			|| doctor?.Speciality?.toLowerCase().split(' ').includes(text.toLowerCase())
+
+
+
+		)
+		console.log(searchedDoctor);
+		setDoctor(searchedDoctor)
+	}
 
 	return (
 		<div className=''>
-			<Hero></Hero>
-			<DoctorContainer doctors={data}></DoctorContainer>
+			<Hero handleSearch={handleSearch}></Hero>
+			<DoctorContainer doctors={doctor}></DoctorContainer>
 
 
 		</div>
