@@ -1,9 +1,10 @@
 import React from 'react';
 import { IoTrashBinSharp } from "react-icons/io5";
+import { removeBooking } from '../utils';
 
 
-const BookDoctorCard = ({ doctor }) => {
-	const { Doctor_image, Available_Days, Experience, Name, Education, Speciality, Registration_Number, Consultation_Fee } = doctor;
+const BookDoctorCard = ({ doctor, handleDeleteBooking }) => {
+	const { Doctor_image, Available_Days, Experience, Name, Education, Speciality, Registration_Number, Consultation_Fee, id } = doctor;
 
 	return (
 		<div className="">
@@ -17,9 +18,13 @@ const BookDoctorCard = ({ doctor }) => {
 
 
 
-				<button className="bg-red-50 text-red-800 font-semibold py-2 px-4 rounded-4xl border border-red-800 hover:bg-red-500 hover:text-white  transition">
+				<button
+					onClick={() => handleDeleteBooking(id)}
+					className="bg-red-50 text-red-800 font-semibold py-2 px-4 rounded-4xl border border-red-800 hover:bg-red-500 hover:text-white  transition">
 					Cancel Appointment
 				</button>
+				{/* <Toaster /> */}
+
 
 
 			</div>

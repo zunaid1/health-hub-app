@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Hero from '../components/Hero';
 import DoctorContainer from '../components/DoctorContainer';
 import { useLoaderData } from 'react-router';
+//import ReactStats from '../components/ReactStats';
+import SuccessSection from '../components/SuccessSection';
 
 
 const Home = () => {
@@ -30,6 +32,7 @@ const Home = () => {
 		<div className=''>
 			<Hero handleSearch={handleSearch}></Hero>
 			<DoctorContainer doctors={doctor}></DoctorContainer>
+			<SuccessSection></SuccessSection>
 
 
 		</div>

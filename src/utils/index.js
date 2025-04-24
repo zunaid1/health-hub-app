@@ -27,16 +27,19 @@ export const addBooking = doctor => {
 
 	bookings.push(doctor)
 	localStorage.setItem('book', JSON.stringify(bookings))
+	console.log(`${doctor.Name} Booked Successfully!`);
 	toast.success(`${doctor.Name} Booked Successfully!`)
 }
 
 
-// export const removeFavorite = id => {
-//   let favorites = getFavorites()
-//   const remaining = favorites.filter(b => b.id !== id)
-//   localStorage.setItem('favorites', JSON.stringify(remaining))
-//   toast.success('Phone Removed from Favorite List!')
-// }
+export const removeBooking = id => {
+	let bookings = getBooking()
+	const remaining = bookings.filter(b => b.id !== id)
+	localStorage.setItem('book', JSON.stringify(remaining))
+	console.log('Removed from Booked List!');
+
+	toast.success('Removed from Booked List!')
+}
 
 // export const getCart = () => {
 //   let cart = []

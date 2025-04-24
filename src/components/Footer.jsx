@@ -9,7 +9,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
 	return (
-		<div className='w-full bg-gray-500  text-center p-4 flex flex-col justify-center items-center space-y-2'>
+		<div className='w-full bg-[#FFFFFF]  text-center p-4 flex flex-col justify-center items-center space-y-2'>
 			<BrandName></BrandName>
 			<div className="navbar-center  lg:flex">
 				<ul className='menu menu-horizontal px-1  lg:flex'>
@@ -27,6 +27,23 @@ const Footer = () => {
 							to='/mybooked'
 						>
 							My-Bookings
+						</NavLink>
+					</li>
+					<li>
+						<NavLink
+							className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
+							to='/blog'
+						>
+							Blog
+						</NavLink>
+					</li>
+
+					<li>
+						<NavLink
+							className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
+							to='/contact'
+						>
+							Contact Us
 						</NavLink>
 					</li>
 

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import DoctorCard from '../components/DoctorCard';
-import { getBooking } from '../utils';
+import { getBooking, removeBooking } from '../utils';
 import BookDoctorCard from '../components/BookDoctorCard';
+import EmptyState from '../components/ui/EmptyState';
 
 const BookedAppoint = () => {
 	const [displayDoctor, setDisplayDoctors] = useState([])
@@ -10,6 +11,21 @@ const BookedAppoint = () => {
 		const savedBookedAppoint = getBooking();
 		setDisplayDoctors(savedBookedAppoint)
 	}, [])
+
+
+const handleDeleteBooking = id => {
+	removeBooking(id);
+	setDisplayDoctors(getBooking());
+
+}
+
+
+
+if(displayDoctor.length < 1) return <EmptyState></EmptyState>
+
+
+
+
 
 
 	return (
@@ -24,7 +40,10 @@ const BookedAppoint = () => {
 
 			<div className='mb-3 space-y-3'>
 				{
-					displayDoctor.map(doctor => < BookDoctorCard key={doctor.id}
+					displayDoctor.map(doctor => < BookDoctorCard 
+						
+						handleDeleteBooking={handleDeleteBooking}
+						key={doctor.id}
 						doctor={doctor}
 					/>)
 				}

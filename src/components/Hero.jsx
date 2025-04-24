@@ -9,7 +9,7 @@ const Hero = ({handleSearch}) => {
 
 
 	return (
-		<div className='space-x-4 border-3 border-white rounded-2xl overflow-auto'>
+		<div className='space-x-4 border-3 border-white rounded-2xl overflow-auto bg-gradient-to-b from-gray-300 to-gray-100 p-8      '>
 			<h1 className='text-2xl md:text-4xl font-bold text-center'>Dependable Care, Backed by Trusted <br /> Professionals.</h1>
 			<p className='text-center'>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
 

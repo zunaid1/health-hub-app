@@ -1,9 +1,15 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData, useNavigate, useParams } from 'react-router';
 import checkAvailability, { addBooking } from '../utils';
 import Button from '../components/ui/Button';
+//import { useNavigate } from 'react-router-dom';
+
+
+
 
 const DoctorDetails = () => {
+	const navigate = useNavigate();
+
 
 	const data = useLoaderData()
 	const { id } = useParams();
@@ -17,7 +23,9 @@ const DoctorDetails = () => {
 	const doctorStatus = checkAvailability(Available_Days);
 
 	const handleBooking =()=> {
-		addBooking(singleDoctor)
+		const result= addBooking(singleDoctor)
+		console.log(result);
+		navigate("/mybooked"); 
 		//console.log("handle Booking button Clicked....");
 	}
 
@@ -106,10 +114,16 @@ const DoctorDetails = () => {
 				</div>
 
 
-
+				
 				<Button onClick={handleBooking}
 					label='Book Appointment Now' />
 
+				{/* <NavLink
+					className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
+					to='/mybooked'
+				>
+					My-Bookings
+				</NavLink> */}
 
 
 			</div>

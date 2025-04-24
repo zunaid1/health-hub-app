@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import BrandName from './shared/BrandName';
 import { NavLink } from 'react-router';
+import { BookingContext } from '../providers/Contexts';
+import { RiCalendarScheduleFill } from "react-icons/ri";
 
 
 
 
 const Navbar = () => {
+	// const [booking, setBooking] = useState([])
+
+	const { booking } = useContext(BookingContext)
+	console.log(booking);
+
+
+
+
+
+
 	return (
 		<div className="sticky top-0 z-50 navbar bg-base-100 shadow-sm">
 			<div className="navbar-start">
@@ -30,6 +42,23 @@ const Navbar = () => {
 								to='/mybooked'
 							>
 								My-Bookings
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
+								className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
+								to='/blog'
+							>
+								Blog
+							</NavLink>
+						</li>
+
+						<li>
+							<NavLink
+								className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
+								to='/contact'
+							>
+								Contact Us
 							</NavLink>
 						</li>
 					</ul>
@@ -67,12 +96,23 @@ const Navbar = () => {
 						</NavLink>
 					</li>
 
+					<li>
+						<NavLink
+							className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
+							to='/contact'
+						>
+							Contact Us
+						</NavLink>
+					</li>
 
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<button className='btn btn-primary  text-white bg-[#176AE5] rounded-3xl'>
-					<NavLink to='/'>Emergency</NavLink>
+
+
+
+				<button className='btn btn-primary  text-white bg-[#176AE5] rounded-3xl ml-3'>
+					<NavLink to='/contact'>Emergency</NavLink>
 				</button>
 			</div>
 		</div>
