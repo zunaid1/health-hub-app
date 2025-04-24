@@ -3,6 +3,8 @@ import DoctorCard from '../components/DoctorCard';
 import { getBooking, removeBooking } from '../utils';
 import BookDoctorCard from '../components/BookDoctorCard';
 import EmptyState from '../components/ui/EmptyState';
+import AppointmentChart from '../components/AppointmentChart';
+
 
 const BookedAppoint = () => {
 	const [displayDoctor, setDisplayDoctors] = useState([])
@@ -19,7 +21,7 @@ const handleDeleteBooking = id => {
 
 }
 
-
+	console.log(displayDoctor)
 
 if(displayDoctor.length < 1) return <EmptyState></EmptyState>
 
@@ -30,6 +32,9 @@ if(displayDoctor.length < 1) return <EmptyState></EmptyState>
 
 	return (
 		<div className='py-12'>
+
+
+			<AppointmentChart displayDoctor={displayDoctor}></AppointmentChart>
 			<div className='text-center py-10'>
 				<h1 className='font-bold text-2xl md:text-4xl '>My Today Appointments</h1>
 				<p>

@@ -48,7 +48,7 @@ const SuccessSection = () => {
 	return (
 		<div
 			ref={ref}
-			className="grid grid-cols-1 md:grid-cols-4  gap-6 text-center py-12 bg-gray-100"
+			className="grid grid-cols-1 md:grid-cols-4  gap-6 text-center py-12"
 		>
 			{successData.map((stat, index) => (
 				<div
