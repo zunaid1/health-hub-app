@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 // const data = [
 // 	{
@@ -42,7 +42,11 @@ const AppointmentChart = ({ displayDoctor }) => {
 	return (
 		<div>
 			Rechart
-			<div>
+
+
+			<div className='w-full max-w-full overflow-x-auto'>
+			<ResponsiveContainer width="100%" height={400}>
+
 				<BarChart
 					width={1000}
 					height={400}
@@ -63,7 +67,12 @@ const AppointmentChart = ({ displayDoctor }) => {
 						))}
 					</Bar>
 				</BarChart>
+				</ResponsiveContainer>
+
 			</div>
+
+
+
 		</div>
 	);
 };

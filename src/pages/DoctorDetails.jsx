@@ -113,10 +113,23 @@ const DoctorDetails = () => {
 					⚠️ Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.
 				</div>
 
-
-				
-				<Button onClick={handleBooking}
+				{
+					doctorStatus === 'Available' ? (
+						<Button onClick={handleBooking}
 					label='Book Appointment Now' />
+					) :
+						(
+							<button className="w-full bg-red-50 text-red-800 font-semibold py-2 px-4 rounded-4xl border border-red-800 hover:bg-red-500 hover:text-white  transition cursor-not-allowed" disabled>
+								Not Available
+							</button>
+						)
+				}
+
+
+
+
+
+
 
 
 			</div>
