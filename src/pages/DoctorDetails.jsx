@@ -118,13 +118,6 @@ const DoctorDetails = () => {
 				<Button onClick={handleBooking}
 					label='Book Appointment Now' />
 
-				{/* <NavLink
-					className={({ isActive }) => (isActive ? 'text-indigo-500 border-b-3 border-indigo-500 ' : '')}
-					to='/mybooked'
-				>
-					My-Bookings
-				</NavLink> */}
-
 
 			</div>
 		</div>

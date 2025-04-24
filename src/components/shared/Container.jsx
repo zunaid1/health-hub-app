@@ -10,6 +10,3 @@ const Container = ({ children }) => {
 
 export default Container
 
-
-
-//bg-gradient-to-b from-gray-300 to-gray-100

@@ -16,11 +16,7 @@ const DoctorCard = ({ doctor }) => {
 	const { Doctor_image, Available_Days, Experience, Name, Education, Speciality, Registration_Number, id } = doctor;
 
 	const status = checkAvailability(Available_Days);
-	//console.log(status);
 
-
-
-	//console.log(Available_Days)
 
 	return (
 		<div className="card bg-base-100 shadow-sm">
