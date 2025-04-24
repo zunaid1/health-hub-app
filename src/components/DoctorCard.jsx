@@ -59,7 +59,7 @@ const DoctorCard = ({ doctor }) => {
 				</div>
 
 			
-				<Link to='/doctor-details' className='w-full'>
+				<Link to={`/doctor-details/${id}`} className='w-full'>
 				<button className="btn btn-outline w-3/4 rounded-2xl text-[#176AE5] border-[#176AE5] hover:bg-[#176AE5] hover:text-white font-bold">
 						View Details
 					</button>
